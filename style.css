@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black !important;
+    overflow-x:hidden;
+}
+
+.navbar{
+    height: 90px;
+    background-color: transparent;
+    display: flex;
+    text-align: end;
+}
+.navbar-nav{
+    margin-left: 980px;
+    list-style: none;
+    gap: 35px;
+}
+.nav-item .nav_a{
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color:white !important;
+    letter-spacing: 0.5px;
+    border-radius: 18px;
+}
+.nav_a:hover{
+    background-color: #DC5F00;
+    border-radius: 18px;
+}
+
+/*nav bar ends here */
+.mainheading{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 230px;
+    transform: translate(-50%,-50%);
+}
+.mainheading span{
+    color: white;
+    display: block;
+}
+.heading1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 2px;
+    background: black;
+    position: relative;
+    animation: heading 3s 1;
+}
+.heading2{
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #DC5F00 !important;
+}
+
+@keyframes heading {
+    0%{
+        color: black;
+        margin-bottom: -60px;
+    }
+    30%{
+        letter-spacing: 30px;
+        margin-bottom: -60px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -60px;
+    }
+}
+
+/* header ends here */
+
+.difrntbirds{
+    margin-top: 370px;
+}
+.birds{
+    width: 400px;
+    height: 420px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.birds-img{
+    display: flex;
+    justify-content: center;
+}
+.birds-para{
+    display: grid;
+    align-items: center;
+    color: rgb(143, 125, 125);
+    padding: 0px 200px 0px 0px;
+}
+.birds-name{
+    font-size: 45px;
+}
+.birds-features{
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.birds-para2{
+    display: grid;
+    align-items: center;
+    color: rgb(143, 125, 125);
+    padding: 0px 0px 0px 175px;
+}
+.birds2{
+    width: 400px;
+    height: 420px;
+    margin-right: 100px;
+    border-radius: 15px;
+}
+.birds-img2{
+    display: flex;
+    justify-content: center;
+}
+.birds-row2 {
+   display: flex;
+   flex-direction: row;
+}
+.birds-para2 {
+    grid-area: para;
+}
+.birds{
+    margin-top: 120px;
+}
+.birds-para{
+    margin-top: 80px;
+}
+.birds2{
+    margin-top: 120px;
+}
+.birds-para2{
+    margin-top: 80px;
+}
+
+/* this dection ends here */
+/* keyframe section */
+
+@keyframes appear{
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range:0% cover 40%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    color: rgb(143, 125, 125);
+    height: 70px;
+    background-color:rgb(22, 21, 21);
+}
+.footer-p{
+    margin-top: 25px;
+}
+
+/* media query */
+/* media query for tablets etc.. */
+
+@media screen and (min-width:600px) and (max-width:1100px){
+    .navbar{
+        
+        width: 100%;
+        background-color: transparet;
+    }
+    .navbar-nav{
+        margin-left: -1500px;
+        gap: 5px;
+    }
+    .nav-item .nav_a{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .nav-item .nav_a:hover{
+        color: #DC5F00 !important;
+        background: none;
+    }
+    
+    /*nav bar ends here */
+    .mainheading{
+        width: 100%;
+        top: 300px;
+    }
+    
+    @keyframes heading {
+        0%{
+            color: black;
+            margin-bottom: -60px;
+        }
+        30%{
+            letter-spacing: 23px;
+            margin-bottom: -60px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -60px;
+        }
+    }
+    
+    /* header ends here */
+    .scroll{
+        width: 100% !important;
+    }
+    .block{
+        width: 100%;
+    }
+    .difrntbirds{
+        margin-top: 300px;
+    }
+    .birds{
+        width: 300px;
+        height: 350px;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    .birds-img{
+        display: flex;
+        justify-content: center;
+    }
+    .birds-row{
+        display: grid;
+    }
+    .birds-para{
+        display: grid;
+        align-items: center;
+        color: rgb(143, 125, 125);
+        padding: 0px 0px 0px 0px;
+        margin-right: 5px;
+    }
+    .birds-name{
+        font-size: 40px;
+    }
+    .birds-features{
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+    .birds-para2{
+        display: grid;
+        align-items: center;
+        margin-left: 20px;
+        color: rgb(143, 125, 125);
+        padding: 0px 0px 0px 0px;
+    }
+    .birds2{
+        width: 300px;
+        height: 350px;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+    .birds-img2{
+        display: flex;
+        justify-content: center;
+    }
+    .birds{
+        margin-top: 80px;
+    }
+    .birds-para{
+        margin-top: 10px;
+    }
+    .birds2{
+        margin-top: 80px;
+    }
+    .birds-para2{
+        margin-top: 10px;
+    }
+    
+    /* this dection ends here */
+    /* keyframe section */
+    
+    @keyframes appear{
+        from {
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+    
+    .block{
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range:0% cover 40%;
+    }
+
+    /* footer */
+    .footer{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+}
+/* this mediaquery ends here */
+
+/* media query for mobile phones */
+
+@media screen and (max-width:599px) {
+    
+    .navbar{
+        
+        width: 100%;
+        background-color: transparet;
+    }
+    .navbar-nav{
+        margin-left: -1500px;
+        gap: 0px;
+    }
+    .nav-item .nav_a{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .nav-item .nav_a:hover{
+        color: #DC5F00 !important;
+        background: none;
+    }
+    
+    /*nav bar ends here */
+    .scroll{
+        width: 100% !important;
+    }
+    .block{
+        width: 100%;
+    }
+    .mainheading{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 250px;
+        transform: translate(-50%,-50%);
+    }
+    .mainheading span{
+        color: white;
+        display: block;
+    }
+    .heading1{
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsi;
+    }
+    .heading2{
+        font-size: 27px;
+    }
+    
+    @keyframes heading {
+        0%{
+            color: black;
+            margin-bottom: -60px;
+        }
+        30%{
+            letter-spacing: 14px;
+            margin-bottom: -60px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -60px;
+        }
+    }
+    
+    /* header ends here */
+    .scroll{
+        width: 100% !important;
+    }
+    .block{
+        width: 100%;
+    }
+    .difrntbirds{
+        margin-top: 200px;
+    }
+    .birds-row{
+        margin-top: -50px;
+    }
+    .birds-row2{
+       flex-direction: column;
+    }
+    .revpara{
+        order: 2;
+    }
+    .revbird{
+        order: 1;
+    }
+    .birds{
+        width: 320px;
+        height: 320px;
+        border-radius: 15px;
+    }
+    .birds-img{
+        display: flex;
+        justify-content: center;
+    }
+    .birds-para{
+        display: grid;
+        align-items: center;
+        color: rgb(143, 125, 125);
+        padding: 0px 20px ;
+    }
+    .birds-name{
+        font-size: 25px;
+        text-align: center;
+    }
+    .birds-features{
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .birds-para2{
+        display: grid;
+        align-items: center;
+        color: rgb(143, 125, 125);
+        padding: 0px 20px;
+    }
+    .birds2{
+        width: 320px;
+        height: 320px;
+        margin-right: 0px;
+        border-radius: 15px;
+    }
+    .birds-img2{
+        display: flex;
+        justify-content: center;
+    }
+    .birds{
+        margin-top: 20px;
+    }
+    .birds-para{
+        margin-top: 0px;
+    }
+    .birds2{
+        margin-top: 20px;
+    }
+    .birds-para2{
+        margin-top: 0px;
+    }
+    
+    
+    /* this dection ends here */
+    /* keyframe section */
+    
+    @keyframes appear{
+        from {
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+    
+    .block{
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range:0% cover 40%;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        color: rgb(143, 125, 125);
+        height: 50px;
+        background-color:rgb(22, 21, 21);
+    }
+    .footer-p{
+        margin-top: 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
