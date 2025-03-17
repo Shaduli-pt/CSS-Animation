@@ -82,7 +82,7 @@ body{
 }
 .birds{
     width: 400px;
-    height: 420px;
+    height: 400px;
     border-radius: 15px;
     margin-top: 30px;
 }
@@ -111,7 +111,7 @@ body{
 }
 .birds2{
     width: 400px;
-    height: 420px;
+    height: 400px;
     margin-right: 100px;
     border-radius: 15px;
 }
@@ -167,6 +167,7 @@ footer {
     color: rgb(143, 125, 125);
     height: 70px;
     background-color:rgb(22, 21, 21);
+    margin-top: 30px;
 }
 .footer-p{
     margin-top: 25px;
